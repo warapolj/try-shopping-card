@@ -1,0 +1,17 @@
+<div class="row cardContainer">
+
+    {{#each products}}
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ this.imagePath }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ this.title }}</h5>
+                <p class="card-text">{{ this.description }}</p>
+                <strong >${{ this.price }}</strong>
+                <a href="#" class="btn btn-success btn-sm add-to-card"><i class="fas fa-cart-plus"></i> Add To Card</a>
+            </div>
+        </div>
+
+    {{/each}}
+
+</div>
